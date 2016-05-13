@@ -43,7 +43,21 @@
             {% endif %}
         {% endif %}
       {% endfor %}
-      <li class="header-item"><a href="{{site.url}}/search"><h3><i class="fa fa-search"></i></h3></a></li>
+     <!-- <li class="header-item"><a href="{{site.url}}/search"><h3><i class="fa fa-search"></i></h3></a></li>-->
+	<li class="header-item-title pull-left" style="width:40%; margin-top: 20px;">
+		<script>
+		  (function() {
+		    var cx = '001812475084992822562:chf9cpyo8wc';
+		    var gcse = document.createElement('script');
+		    gcse.type = 'text/javascript';
+		    gcse.async = true;
+		    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+		    var s = document.getElementsByTagName('script')[0];
+		    s.parentNode.insertBefore(gcse, s);
+		  })();
+		</script>
+		<gcse:search></gcse:search>
+	</li>
     </ul>
   </div>
 <div class="entry-header">
