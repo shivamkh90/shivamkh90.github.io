@@ -19,7 +19,7 @@ github_username:  shivamkh90
 
 
 # put your disqus here
-disqus_shortname: 
+disqus_shortname:
 reading_time:     true # if true, shows the estimated reading time for a post
 words_per_minute: 200
 logo:             assets/images/logo.png # logo visible in the topbar
@@ -27,7 +27,7 @@ logo:             assets/images/logo.png # logo visible in the topbar
 # When testing locally leave blank or use http://localhost:4000
 
 #url: http://shivam.co
-url: 127.0.0.1:4000
+url: http://127.0.0.1:4000
 
 
 # draw your top menu here
@@ -69,7 +69,7 @@ owner:
 
 # Twitter account associated with the site if different from owner/author twitter account.
 # Used in Twitter cards.
-twitter: 
+twitter:
 
 # Social networking links used in author block underneath posts. Update and remove as you like.
 social:
@@ -116,7 +116,7 @@ kramdown:
   toc_levels: 1..6
 #  syntax_highlighter: coderay
 
-  syntax_highlighter_opts: 
+  syntax_highlighter_opts:
     line_numbers: nil
     line_numbers_start: 1
     tab_width: 4
