@@ -9,10 +9,9 @@ image:
     creditlink: http://www.dargadgetz.com/ios-8-abstract-wallpaper-pack-for-iphone-5s-5c-and-ipod-touch-retina/
 linkText: Read More
 ---
-  <section class="section--center mdl-grid mdl-grid--no-spacing" markdown="0">
-    <div class="mdl-cell mdl-cell--12-col">
-      <h4>Features</h4>
-      Minim duis incididunt est cillum est ex occaecat consectetur. Qui sint ut et qui nisi cupidatat. Reprehenderit nostrud proident officia exercitation anim et pariatur ex.
+#### Features
+
+Minim duis incididunt est cillum est ex occaecat consectetur. Qui sint ut et qui nisi cupidatat. Reprehenderit nostrud proident officia exercitation anim et pariatur ex.
       <ul class="toc">
         <h4>Contents</h4>
         <a href="#lorem1">Lorem ipsum</a>
@@ -60,5 +59,3 @@ linkText: Read More
       <p>
         Cupidatat labore nisi ut sunt voluptate quis sunt qui ad Lorem esse nisi. Ex esse velit ullamco incididunt occaecat dolore veniam tempor minim adipisicing amet. Consequat in exercitation est elit anim consequat cillum sint labore cillum. Aliquip mollit laboris ad labore anim.
       </p>
-    </div>
-  </section>
