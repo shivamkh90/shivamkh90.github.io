@@ -11,13 +11,6 @@ linkText: Read More
 tags: [Database, NoSQL, Neo4J, Graph Database, Cypher Query Language, CQL, SQL, Analytics, Social Network]
 ---
 
-
-```ruby
-require 'redcarpet'
-markdown = Redcarpet.new("Hello World!")
-puts markdown.to_html
-```
-
 Neo4J is a NoSQL database that stores information in the form of a huge property graphs where tuples/rows (nodes) are connected to each other with relationships (edges) both of which can have variable number of properties associated with them. Traversing data in the form of graphs implies that we can explore highly connected neighbouring data more efficiently and faster while leaving the data outside our search perimeter untouched. With just a starting point and a pattern to search, neo4j can execute complex queries without the overhead of evaluating relationships.
 
 To make this a bit more comprehensive, first let’s jot down the primary differences and correspondences between a relational database and Neo4J.
@@ -26,7 +19,7 @@ To make this a bit more comprehensive, first let’s jot down the primary differ
 
   ![Domain model sql vs neo4j](http://www.tothenew.com/blog/wp-content/uploads/2016/06/407x215xTVSL.png.pagespeed.ic.Ua7DY4xkOl.png){:style="margin:auto; display: block; width: 70%"}
 
-######Domain model in SQL vs Neo4J.
+###### Domain model in SQL vs Neo4J.
 
   - **Rows vs Nodes** :- Unlike relational databases which store records (tuples/rows) of same type(entity) in large tables, neo4j stores them (tuple/rows) in the form of nodes that are then assigned a type by providing them with one or more labels. This precisely means that nodes corresponds to tuples/rows in a relational db and node-label corresponds to the table name in a relational database.
 
@@ -41,34 +34,34 @@ Combining all of the above here is a single visual from [Neo4j](https://neo4j.co
 
   ![Property Graph Model](http://www.tothenew.com/blog/wp-content/uploads/2016/06/graph.png){:style="margin:auto; display: block; width: 70%;"}
 
-######Property graph model.
+###### Property graph model.
 
 Let’s take an example for making above text much more clear :-
 
 ![Relational Model](http://www.tothenew.com/blog/wp-content/uploads/2016/06/767x462xDB.png.pagespeed.ic.X0yCMnc2f3.png){:style="margin:auto; display: block; width: 70%;"}
 
-######Relational Model
+###### Relational Model
 
 ![Property Graph Model](http://www.tothenew.com/blog/wp-content/uploads/2016/06/571x452xDB_NEO.png.pagespeed.ic.dfJjcfGgUb.png){:style="margin:auto; display: block; width: 70%;"}
 
-######Property Graph Model
+###### Property Graph Model
 
 
 
-#####Getting started with CQL (Cypher query language) :-
+##### Getting started with CQL (Cypher query language) :-
 
 According to the [documentation](https://neo4j.com/developer/cypher-query-language/) “Cypher is a declarative, SQL-inspired language for describing patterns in graphs visually using an ascii-art syntax. It allows us to state what we want to select, insert, update or delete from our graph data without requiring us to describe exactly how to do it.”
 A sample query to find ‘Name of Persons who have visited a specific city’
 
 _(Consider above domain model)_
 
-######In SQL :-
+###### In SQL :-
 
 
 SELECT name FROM Person LEFT JOIN VISITED_CITIES ON Person.Id = VISITED_CITIES.Person_Id LEFT JOIN City ON City.Id = VISITED_CITIES.City_Id WHERE CITY.name = “New Delhi”
 
 
-######In CQL :-
+###### In CQL :-
 
 MATCH (p:Person)-[:VISITED]->(c:City) WHERE c.name = “New Delhi” RETURN p.name
 
