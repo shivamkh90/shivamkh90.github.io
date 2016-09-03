@@ -6,14 +6,13 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: Your awesome title
+title: Techsome
 email: shivamkh90@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for
   Google search results) and in your feed.xml site description.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://yourdomain.com" # the base hostname & protocol for your site
 twitter_username: jekyllrb
 github_username:  shivamkh90
 
@@ -77,16 +76,10 @@ social:
     url: "https://github.com/shivamkh90"
   - title: "linkedin"
     url: "https://in.linkedin.com/in/khandelwalshivam"
-#  - title: "youtube"
-#    url: "https://www.youtube.com/channel/UCfnSek-9HPWOx5e2pH7VFgg"
-# Background image to be tiled on all pages
-background:
 
 # Analytics and webmaster tools stuff goes here
 google_analytics: UA-77339578-1
 google_verify:
-# https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
-bing_verify:
 
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 timezone:    Asia/Kolkata
@@ -108,13 +101,14 @@ paginate: 5
 
 # if true, shows the floatting share buttons
 float_share: true
-
+markdown: kramdown
 kramdown:
+  input: GFM
   auto_ids: true
   footnote_nr: 1
   entity_output: as_char
   toc_levels: 1..6
-#  syntax_highlighter: coderay
+  syntax_highlighter: rouge
 
   syntax_highlighter_opts:
     line_numbers: nil
