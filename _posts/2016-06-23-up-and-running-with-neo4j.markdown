@@ -4,14 +4,13 @@ title:  "Up and Running with Neo4J"
 date:   2016-06-23 23:30:27 +0530
 categories: databases nosql graph neo4j
 image:
-    feature: mdl.jpg
-    credit: dargadgetz
-    creditlink: http://www.dargadgetz.com/ios-8-abstract-wallpaper-pack-for-iphone-5s-5c-and-ipod-touch-retina/
+    feature: neo4j.png
 linkText: Read More
 tags: [Database, NoSQL, Neo4J, Graph Database, Cypher Query Language, CQL, SQL, Analytics, Social Network]
 ---
 
-Neo4J is a NoSQL database that stores information in the form of a huge property graphs where tuples/rows (nodes) are connected to each other with relationships (edges) both of which can have variable number of properties associated with them. Traversing data in the form of graphs implies that we can explore highly connected neighbouring data more efficiently and faster while leaving the data outside our search perimeter untouched. With just a starting point and a pattern to search, neo4j can execute complex queries without the overhead of evaluating relationships.
+Neo4J is a NoSQL database that stores information in the form of a huge property graphs where tuples/rows (nodes) are connected to each other with relationships (edges) both of which can have variable number of properties associated with them.<!--excerpt--> Traversing data in the form of graphs implies that we can explore highly connected neighbouring data more efficiently and faster while leaving the data outside our search perimeter untouched. With just a starting point and a pattern to search, neo4j can execute complex queries without the overhead of evaluating relationships.
+
 
 To make this a bit more comprehensive, first let’s jot down the primary differences and correspondences between a relational database and Neo4J.
 

@@ -99,6 +99,8 @@ permalink:   /:categories/:title/
 # Amount of post to show on home page
 paginate: 5
 
+excerpt_seperator: <!--excerpt-->
+
 # if true, shows the floatting share buttons
 float_share: true
 markdown: kramdown

@@ -12,7 +12,7 @@ comments: true
         {% for post in site.posts %}
           <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
           {% if post.layout == "post" or post.layout == "feature-icon"%}
-            <header class="section__play-btn mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone mdl-color--teal-100 mdl-color-text--white">
+            <header class="section__play-btn mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone mdl-color-text--white">
             {% if post.icon.feature %}
             <i class="material-icons">{{post.icon.feature}}</i>
             {% elsif post.image.feature %}
@@ -22,8 +22,9 @@ comments: true
             <div class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
               <div class="mdl-card__supporting-text">
                 <h4>{{post.title}}</h4><span class="mdl-typography--caption-color-contrast">{{ post.date | date: "%B %d, %Y" }}</span> </br>
-                {{post.description}}
-                Dolore ex deserunt aute fugiat aute nulla ea sunt aliqua nisi cupidatat eu. Nostrud in laboris labore nisi amet do dolor eu fugiat consectetur elit cillum esse.
+                <p>
+                  {% if post.excerpt %}{{ post.excerpt | strip_html | strip_newlines | truncate: 300 }}{% else %}{{ site.description }}{% endif %}
+                </p>
               </div>
               <div class="mdl-card__actions">
                 <a href="{{post.url}}" class="mdl-button">{{post.linkText}}</a>
