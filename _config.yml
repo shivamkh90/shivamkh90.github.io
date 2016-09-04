@@ -13,8 +13,6 @@ description: > # this means to ignore newlines until "baseurl:"
   line in _config.yml. It will appear in your document head meta (for
   Google search results) and in your feed.xml site description.
 baseurl: "" # the subpath of your site, e.g. /blog
-twitter_username: jekyllrb
-github_username:  shivamkh90
 
 
 # put your disqus here
@@ -25,8 +23,8 @@ logo:             assets/images/logo.png # logo visible in the topbar
 # Your site's domain goes here (eg: //mmistakes.github.io, http://mademistakes.com, etc)
 # When testing locally leave blank or use http://localhost:4000
 
-url: http://shivam.co
-#url: http://127.0.0.1:4000
+#url: http://shivam.co
+url: http://127.0.0.1:4000
 
 
 # draw your top menu here
@@ -58,24 +56,14 @@ menu:
 owner:
   name:           Shivam Khandelwal
   site:           http://shivam.co
-  avatar:         assets/images/avatar.jpg
+  avatar:         /assets/images/avatar.jpg
   bio:            "Your bio goes here. It shouldn't be super long but a good two sentences or two should suffice."
   email:          shivamkh90@gmail.com
-  # Twitter nick for use in Twitter cards and follow button.
-  #twitter: aron_bordin # if no twitter in this config, the twitter follow button will be removed
-  # GitHub nick for use in follow button in author block.
-  #github: aron-bordin
-
-# Twitter account associated with the site if different from owner/author twitter account.
-# Used in Twitter cards.
-twitter:
 
 # Social networking links used in author block underneath posts. Update and remove as you like.
-social:
-  - title: "github"
-    url: "https://github.com/shivamkh90"
-  - title: "linkedin"
-    url: "https://in.linkedin.com/in/khandelwalshivam"
+twitter: "https://twitter.com/shivamkh90"
+github: "https://github.com/shivamkh90"
+linkedin: "https://in.linkedin.com/in/khandelwalshivam"
 
 # Analytics and webmaster tools stuff goes here
 google_analytics: UA-77339578-1
@@ -85,8 +73,6 @@ google_verify:
 timezone:    Asia/Kolkata
 locale:      en_IN
 future:      true
-highlighter: rouge
-markdown:    kramdown
 gems:
   - jekyll-sitemap
 sass:
@@ -103,6 +89,7 @@ excerpt_seperator: <!--excerpt-->
 
 # if true, shows the floatting share buttons
 float_share: true
+highlighter: rouge
 markdown: kramdown
 kramdown:
   input: GFM
@@ -123,9 +110,11 @@ kramdown:
 # Default extensions
 post_ext: md
 page_ext: md
+
 # Found in _templates/
 post_layout: post
 page_layout: page
+
 # Format titles with titlecase?
 titlecase: true
 
