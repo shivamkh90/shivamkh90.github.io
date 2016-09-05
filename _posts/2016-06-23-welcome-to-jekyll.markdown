@@ -3,10 +3,7 @@ layout: post
 title:  "Welcome to Jekyll!"
 date:   2016-06-23 23:01:27 +0530
 categories: jekyll update
-image:
-    feature: mdl.jpg
-    credit: dargadgetz
-    creditlink: http://www.dargadgetz.com/ios-8-abstract-wallpaper-pack-for-iphone-5s-5c-and-ipod-touch-retina/
+image: /assets/images/mdl.jpg
 linkText: Read More
 ---
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.

@@ -11,12 +11,12 @@ comments: true
         <div class="mdl-layout__tab-panel is-active" id="overview">
         {% for post in site.posts %}
           <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
-          {% if post.layout == "post" or post.layout == "feature-icon"%}
+          {% if post.image or post.icon %}
             <header class="mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone mdl-color-text--white">
-            {% if post.icon.feature %}
-            <i class="material-icons">{{post.icon.feature}}</i>
-            {% elsif post.image.feature %}
-            <img src="assets/images/{{ post.image.feature }}" alt="{{ post.title }}" style="max-width: 100%" />
+            {% if post.icon%}
+            <i class="material-icons">{{post.icon}}</i>
+            {% elsif post.image %}
+            <img src="{{ post.image }}" alt="{{ post.title }}" style="max-width: 100%" />
             {% endif %}
             </header>
             <div class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
@@ -38,7 +38,7 @@ comments: true
               <li class="mdl-menu__item" disabled>Twitter</li>
               <li class="mdl-menu__item">LinkedIn</li>
             </ul>
-          {% elsif post.layout="text" %}
+          {% else %}
             <div class="mdl-card mdl-cell mdl-cell--12-col">
               <div class="mdl-card__supporting-text">
                 <h4>{{post.title}}</h4>
