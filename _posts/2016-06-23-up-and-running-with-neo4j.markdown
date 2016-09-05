@@ -2,7 +2,7 @@
 layout: post
 title:  "Up and Running with Neo4J"
 date:   2016-06-23 23:30:27 +0530
-categories: databases nosql graph neo4j
+categories: blogs database nosql graph neo4j
 image: /assets/images/neo4j.png
 linkText: Read More
 tags: [Database, NoSQL, Neo4J, Graph Database, Cypher Query Language, CQL, SQL, Analytics, Social Network]

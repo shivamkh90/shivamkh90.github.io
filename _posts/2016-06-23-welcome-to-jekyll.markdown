@@ -2,7 +2,7 @@
 layout: post
 title:  "Welcome to Jekyll!"
 date:   2016-06-23 23:01:27 +0530
-categories: jekyll update
+categories: blogs jekyll update
 image: /assets/images/mdl.jpg
 linkText: Read More
 ---
