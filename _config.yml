@@ -19,7 +19,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 disqus_shortname:
 reading_time:     true # if true, shows the estimated reading time for a post
 words_per_minute: 200
-logo:             assets/images/logo.png # logo visible in the topbar
+logo:             /assets/images/logo.png # logo visible in the topbar
 # Your site's domain goes here (eg: //mmistakes.github.io, http://mademistakes.com, etc)
 # When testing locally leave blank or use http://localhost:4000
 
@@ -75,6 +75,9 @@ locale:      en_IN
 future:      true
 gems:
   - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-coffeescript
+  - jekyll-paginate
 sass:
   sass_dir: _sass
   style: compressed
@@ -120,4 +123,3 @@ titlecase: true
 
 include: [".htaccess"]
 exclude: ["lib", "config.rb", "Capfile", "config", "Gemfile", "Gemfile.lock", "README.md", "LICENSE", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules"]
-gems: [jekyll-paginate]
