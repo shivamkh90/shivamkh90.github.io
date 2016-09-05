@@ -9,6 +9,7 @@
           <main class="mdl-layout__content" style="background: white">
             <section class="section--center mdl-grid mdl-grid--no-spacing">
               <div class="mdl-cell mdl-cell--12-col">
+                {{page.disqus}}
                 <h3>{{page.title}}</h3>
                 {{ content }}
               </div>
@@ -19,9 +20,14 @@
                      *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
                      *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
                      */
+                    {% if page.disqus_identifier != null %}
+                      var id={{page.disqus_identifier}};
+                    {% else %}
+                      var id="{{page.date | date_to_xmlschema}}";
+                    {% endif %}
                     var disqus_config = function () {
                         this.page.url = "{{canonical}}";  // Replace PAGE_URL with your page's canonical URL variable
-                        this.page.identifier = "{{page.date | date_to_xmlschema}}"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+                        this.page.identifier = id; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
                     };
                     (function() {  // DON'T EDIT BELOW THIS LINE
                         var d = document, s = d.createElement('script');

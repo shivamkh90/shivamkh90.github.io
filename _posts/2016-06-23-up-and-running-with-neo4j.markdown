@@ -7,6 +7,7 @@ image: /assets/images/neo4j.png
 linkText: Read More
 tags: [Database, NoSQL, Neo4J, Graph Database, Cypher Query Language, CQL, SQL, Analytics, Social Network]
 comments: true
+disqus_identifier: 2
 ---
 
 Neo4J is a NoSQL database that stores information in the form of a huge property graphs where tuples/rows (nodes) are connected to each other with relationships (edges) both of which can have variable number of properties associated with them.<!--excerpt--> Traversing data in the form of graphs implies that we can explore highly connected neighbouring data more efficiently and faster while leaving the data outside our search perimeter untouched. With just a starting point and a pattern to search, neo4j can execute complex queries without the overhead of evaluating relationships.
