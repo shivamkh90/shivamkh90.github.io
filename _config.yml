@@ -5,6 +5,7 @@
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # 'jekyll serve'. If you change this file, please restart the server process.
 
+
 # Site settings
 title: Techsome
 email: shivamkh90@gmail.com
@@ -20,9 +21,10 @@ disqus_shortname: shivam-co
 reading_time:     true # if true, shows the estimated reading time for a post
 words_per_minute: 200
 logo:             /assets/images/logo.png # logo visible in the topbar
+
+
 # Your site's domain goes here (eg: //mmistakes.github.io, http://mademistakes.com, etc)
 # When testing locally leave blank or use http://localhost:4000
-
 url: http://shivam.co
 #url: http://127.0.0.1:4000
 
@@ -73,12 +75,14 @@ google_verify:
 timezone:    Asia/Kolkata
 locale:      en_IN
 future:      true
+
 gems:
   - jekyll-sitemap
   - jekyll-seo-tag
   - jekyll-coffeescript
   - jekyll-paginate
   - jekyll-feed
+
 sass:
   sass_dir: _sass
   style: compressed
@@ -89,9 +93,7 @@ permalink:   /:categories/:title/
 # Amount of post to show on home page
 paginate: 5
 
-excerpt_seperator: <!--excerpt-->
-
-# if true, shows the floatting share buttons
+# if true, shows the floating share buttons
 float_share: true
 highlighter: rouge
 markdown: kramdown

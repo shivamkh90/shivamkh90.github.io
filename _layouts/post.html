@@ -11,6 +11,8 @@
               <div class="mdl-cell mdl-cell--12-col">
                 {{page.disqus}}
                 <h3>{{page.title}}</h3>
+                <span class="mdl-typography--caption mdl-color-text--orange-700">{{ page.date | date: "%B %d, %Y" }}    </span>
+                <span class="disqus-comment-count mdl-typography--caption mdl-color-text--orange-700" style="float: right;" data-disqus-identifier="{{page.disqus_identifier}}"></span>
                 {{ content }}
               </div>
               {% if page.comments and site.disqus_shortname %}
