@@ -92,6 +92,14 @@ Download the archive from https://neo4j.com/download/
 
 For example,
 
+~~~
+
+public static void main(String... args){
+  System.out.println();
+}
+
+~~~
+
 {% highlight shell %}
  tar -xf neo4j-enterprise-2.3.1-unix.tar.gz
  The top level directory is referred to as NEO4J_HOME
