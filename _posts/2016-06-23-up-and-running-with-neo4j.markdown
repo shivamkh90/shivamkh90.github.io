@@ -92,15 +92,8 @@ Download the archive from https://neo4j.com/download/
 
 For example,
 
-~~~
-
-public static void main(String... args){
-  System.out.println();
-}
 
 ~~~
-
-{% highlight shell %}
  tar -xf neo4j-enterprise-2.3.1-unix.tar.gz
  The top level directory is referred to as NEO4J_HOME
  Run Neo4j using,
@@ -108,7 +101,7 @@ public static void main(String... args){
  Instead of ‘neo4j console’, you can use neo4j start to start the server process in the background.
  Visit http://localhost:7474 in your web browser.
  Change the password for the ‘neo4j’ account.
-{% endhighlight %}
+~~~
 
 
 

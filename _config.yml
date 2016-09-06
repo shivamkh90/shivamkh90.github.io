@@ -79,13 +79,9 @@ future:      true
 gems:
   - jekyll-sitemap
   - jekyll-seo-tag
-  - jekyll-coffeescript
   - jekyll-paginate
   - jekyll-feed
 
-sass:
-  sass_dir: _sass
-  style: compressed
 
 # https://github.com/mojombo/jekyll/wiki/Permalinks
 permalink:   /:categories/:title/
@@ -107,19 +103,10 @@ kramdown:
 
   syntax_highlighter_opts:
     line_numbers: nil
-    line_numbers_start: 1
     tab_width: 4
-    bold_every: 10
-    css: class
+  #  bold_every: 10
+  #  css: class
 
-# Octopress
-# Default extensions
-post_ext: md
-page_ext: md
-
-# Found in _templates/
-post_layout: post
-page_layout: page
 
 # Format titles with titlecase?
 titlecase: true
