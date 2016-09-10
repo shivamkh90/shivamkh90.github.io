@@ -21,8 +21,16 @@
                   <a class="a2a_button_twitter"></a>
                   <a class="a2a_button_linkedin"></a>
                   <a class="a2a_button_google_plus"></a>
+                  <a class="a2a_dd" href="https://www.addtoany.com/subscribe?linkurl=http%3A%2F%2Fshivam.co%2Ffeed.xml&amp;linkname=">
+                    <img src="{{site.url}}/assets/images/rss.png" width="32" height="32" border="0" alt="Subscribe"/></a>
                   <br/><br/>
                 </div>
+                <script>
+                var a2a_config = a2a_config || {};
+                a2a_config.linkurl = "http://shivam.co/feed.xml";
+                </script>
+                <script async src="https://static.addtoany.com/menu/feed.js"></script>
+                <script async src="https://static.addtoany.com/menu/page.js"></script>
                 <!-- AddToAny END -->
               </div>
               {% if page.comments and site.disqus_shortname %}
@@ -72,7 +80,6 @@
           </main>
     </div>
     <script src="https://code.getmdl.io/1.1.3/material.min.js"></script>
-    <script src="https://static.addtoany.com/menu/page.js"></script>
     {% if page.comments and site.disqus_shortname %}
     <script id="dsq-count-scr" src="//{{site.disqus_shortname}}.disqus.com/count.js" async></script>
     {% endif %}
