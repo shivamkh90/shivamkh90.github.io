@@ -10,11 +10,10 @@ comments: true
 disqus_identifier: 4
 ---
 
-##### What is docker
 
 ![Docker Logo]({{site.url}}/assets/images/docker.png "Docker")
 
-
+##### What is docker
 Docker is an open-source initative to automate build and deploy processes on linux based platforms. The softwares build over docker run in software-containers over a host os. These software containers are isolated from each other by using cgroups or user namespaces feature available on linux platforms. According to the official [website](https://www.docker.com/what-docker), the features of docker are :-
 
 > Docker containers wrap a piece of software in a complete filesystem that contains everything needed to run: code, runtime, system tools, system libraries – anything that can be installed on a server. This guarantees that the software will always run the same, regardless of its environment.
