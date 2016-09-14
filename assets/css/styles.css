@@ -236,3 +236,12 @@ html, body {
 .mdl-demo .mdl-menu__container {
   z-index: 99;
 }
+
+.icode {
+    display: inline;
+    font-family: monospace;
+    color: #c7254e;
+    background-color: #f9f2f4;
+    padding: 2px 4px;
+    border-radius: 4px
+}
