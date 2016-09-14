@@ -1,11 +1,11 @@
 ---
 layout: post
-title:  "Dockerizing a spring boot app - Part 1"
+title:  "Docker basics"
 date:   2016-09-13 13:35:00 +0530
-categories: blogs java docker spring-boot
+categories: blogs docker
 image: /assets/images/docker.png
 linkText: Read More
-tags: [Java, Docker, Spring Boot, Spring, Docker Images]
+tags: [Java, Docker, Docker Images]
 comments: true
 disqus_identifier: 4
 ---
