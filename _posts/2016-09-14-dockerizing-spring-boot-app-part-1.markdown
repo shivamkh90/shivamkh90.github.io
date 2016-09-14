@@ -11,7 +11,7 @@ disqus_identifier: 4
 ---
 
 
-![Docker Logo]({{site.url}}/assets/images/docker.png "Docker"){:style="align:center;"}
+![Docker Logo]({{site.url}}/assets/images/docker.png "Docker"){:style="display:block; margin: auto;"}
 
 Docker is an open-source initative to automate build and deploy processes on linux based platforms. The softwares build over docker run in software-containers over a host os. These software containers are isolated from each other by using cgroups or user namespaces feature available on linux platforms. According to the official [website](https://www.docker.com/what-docker), the features of docker are :-
 
